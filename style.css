@@ -1,0 +1,160 @@
+/* reset css*/
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial Black ", serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.toggle
+{
+    position: fixed;
+    top: 2em;
+    right:2em;
+    width: 2em;
+    height: 2em;
+    background:transparent url("images/icons/menu.png") center/cover;
+    z-index: 3000;
+}
+.toggle.active
+{
+    background: grey url("images/icons/close.png") center/cover;
+}
+
+
+section
+ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    height: 100vh ;
+    display: none;
+    z-index: 2000;
+ }
+
+section.active
+{
+    display: flex;
+}
+
+
+
+ .textbox
+ {
+
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #1d1d26;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+.textbox li 
+{
+    margin-bottom: 2em;
+}
+
+.textbox li a
+{
+    font-size: 4em;
+    -webkit-text-stroke: 2px white ;
+    color: transparent;
+} 
+
+.textbox li a.active 
+{
+
+
+    color:white;
+}
+
+ .imgbox
+ {
+
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+
+ }
+
+
+ .imgbox img
+ {
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .slider 
+ {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color:brown;
+     
+  }
+  .gallery
+   {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+   }
+   .gallery img 
+   {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100vh;
+     object-fit: cover;
+     opacity: 0;
+
+   }
+   
+   .gallery img.active
+   {
+    opacity: 1;
+   }
+  .commands
+   {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3em;
+   }
+ 
+
+
+.commands img 
+ {
+     width: 100%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
